@@ -6,7 +6,6 @@ const ws: WebSocket = new WebSocket('ws://localhost:5000/ws');
  * Sets the callback for the onmessage event for the websocket
  */
 ws.onmessage = (event: MessageEvent): void => {
-  console.log(`Message received: ${String(event.data)}`);
   $('#ws-messages').append($(`<li class="list-group-item">${String(event.data)}</li>`));
 }
 
@@ -15,7 +14,6 @@ ws.onmessage = (event: MessageEvent): void => {
  */
 $('#send-button').click((): void => {
   const msg: string = String($('#message-to-send').val());
-  console.log(`Sending the following to WebSocket => ${msg}`);
   ws.send(msg);
   $('#message-to-send').val('');
 });
