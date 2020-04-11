@@ -1,5 +1,5 @@
 {
-  "name": "python-chatroom-example",
+  "name": "python_chatroom_example",
   "version": "0.1.0",
   "description": "Quick example on how to make a chatroom in Python.  For educational purposes only.",
   "scripts": {

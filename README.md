@@ -110,11 +110,13 @@ When you want to come back to this environment, you'll need to re-activate the P
 
 ### 5. Install the Python Dependencies
 
-Run this AFTER you've created and activated the Python virtual environment.  
+Run this **AFTER** you've created and activated the Python virtual environment.  
 
 ```sh
 pip install -r requirements.txt
 ```
+
+**NOTE:** Notice how we didn't have `pip3` this time.  This is because the virtual environment was created with Python3, so we're running in a Python3 environment with no risk of accidentally using Python2.  
 
 ### 6. Build the UI
 
@@ -137,6 +139,7 @@ python app.py
 ```
 
 Server will be running on [http://localhost:5000/](http://localhost:5000/).  
+You can use <kbd>ctrl</kbd> + <kbd>C</kbd> to stop the application.  
 
 ### 3. Using the socket
 
