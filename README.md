@@ -1,5 +1,11 @@
 # Python Chatroom Example
 
+<hr>
+
+**WARNING**: This is a work in progress.  Once this is complete this warning will be removed.  Thank you for your patience.  See the [.todo](./.todo) file more details.  
+
+<hr>
+
 This is a very simple example of how to setup a chat room using Python.  
 For this example, we'll be using the Python web microframework [Quart](https://pgjones.gitlab.io/quart/).  
 
@@ -10,12 +16,6 @@ While Node.js may not be strictly necessary to build a UI as simple as this and 
 
 The UI isn't very complicated, just a textfield, a send button, and an area where messages render.  
 The chat UI uses no frameworks, just simple [jQuery](https://jquery.com/) for functionality and [Bootstrap](https://getbootstrap.com/) for styling.  
-
-<hr>
-
-**WARNING**: This is a work in progress.  Once this is complete this warning will be removed.  Thank you for your patience.  
-
-<hr>
 
 ## License
 
@@ -216,8 +216,13 @@ python app.py
 Server will be running on [http://localhost:5000/](http://localhost:5000/).  
 You can use <kbd>ctrl</kbd> + <kbd>C</kbd> to stop the application.  
 
-### 3. Using the socket
+### 3. Using the Chatroom
 
-1. Enter anything in the textbox.
-2. Click the <kbd>send</kbd>
-3. When the messages is received via the websocket, the application will push that message to all connected users.  
+1. Open some browser windows.  
+   ![screenshot 1](./screenshot-1.png)  
+2. Enter anything in the textbox.
+   ![screenshot 2](./screenshot-2.png)  
+3. Click the <kbd>send</kbd>  
+   ![screenshot 3](./screenshot-3.png)  
+4. When the messages is received via the websocket, the application will push that message to all connected users.  
+   ![screenshot 4](./screenshot-4.png)  
